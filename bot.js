@@ -321,7 +321,7 @@ if (message.content === 'dt!help') {
   }
 
   if (message.content === 'dt!code') {
-    message.channel.send("")
+    message.channel.send("https://github.com/gresta00/bot-code/main/bot.js")
   }
 
 
