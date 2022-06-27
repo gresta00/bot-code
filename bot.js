@@ -73,8 +73,7 @@ if (message.content === 'dt!help') {
     message.channel.send(
       {embed: {
           color: 0x0062ff,
-          description: 'トークンを含むメッセージを削除したりできるbotです！\n他にもいろんな機能があります！\n今後も機能追加する予定です！\n**コマンド一覧**\n`dt!​help` このヘルプを表示します。\n`dt!embed` 注目を集めるためのバナーを表示します。謎です。\ndt!​ban @<username>` ユーザーをBANします\n`dt!​del100` 直近100件のメッセージを削除します\n**注意：一部のコマンドは対応した権限が必要です。権限がない場合エラーが発生します。**'
-      }}
+          description: 'トークンを含むメッセージを削除したりできるbotです！\n他にもいろんな機能があります！今後も機能追加する予定です！\n**対策機能**\nトークンに特定の文字が必ず含まれている性質を利用し、自動的に削除します。デフォルトで有効になっていて、コマンドの実行等の操作は不要です。\n**コマンド一覧**\n-表示系\n`dt!help` このメッセージ(ヘルプ)を表示します。\n`dt!invite` 招待を作成します。24時間で期限切れになります。使用回数制限はありません。\n`dt!mlist` メンバーの一覧を表示します。メンションは行われません。\n`dt!adlist` 管理者の一覧を表示します。メンションは行われません。\n`dt!code` ソースコードへのリンクを表示します。\n-管理系\n`dt!del10` メッセージを一括削除します。最後の数字は1/3/5/10/20/30/40/50/100から選べます。\n`dt!ban @username` 指定のメンバーをBANします。\n`dt!kick @username` 指定のメンバーをキックします。\n`dt!on/off` 現在開発中です。動作しません。      }}
     );
   
   }
@@ -321,7 +320,7 @@ if (message.content === 'dt!help') {
   }
 
   if (message.content === 'dt!code') {
-    message.channel.send("https://github.com/gresta00/bot-code/main/bot.js")
+    message.channel.send("https://github.com/gresta00/bot-code/blob/main/bot.js")
   }
 
 
